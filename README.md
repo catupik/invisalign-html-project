@@ -11,8 +11,8 @@ This is a website for promoting Invisalign, an orthodontic treatment for straigh
 - Responsive design for optimal viewing on different devices.
 
 ## Installation
-1. Clone the repository: git clone https://github.com/your-username/invisalign-website.git
-2. Navigate to the project directory: cd invisalign-website
+1. Clone the repository: git clone [https://github.com/catupik/invisalign-html-project.git]
+2. Navigate to the project directory: cd invisalign-html-project
 3. Open the index.html file in a web browser to view the website.
 
 ## Usage
