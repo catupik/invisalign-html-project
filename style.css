@@ -1,0 +1,614 @@
+/* main page */
+body {
+    margin: 0;
+  }
+  
+  
+  .menu {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  #myVideo {
+      width: 100%;
+  }
+  
+  
+  h2 {
+      font-family: 'Alata', sans-serif;
+      font-size: 30px;
+      letter-spacing: -1px;
+      font-stretch: ultra-condensed;
+      font-weight: lighter;
+      align-self: center;   
+      color: #23376b;
+      text-align: center;
+  }
+  
+  h3 {
+      font-family: 'Alata', sans-serif;
+      font-stretch: ultra-condensed;
+      font-weight: lighter;
+      color: #23376b;
+  
+  }
+  
+  
+  p{
+      font-family: 'Noto Sans Symbols 2', sans-serif;
+      font-weight: 100;
+      font-size: 20px;
+      
+      color: #23376b;
+  }
+  .nav {
+      
+      display: flex;
+      justify-content: center;
+      position: fixed;
+   
+      background-color: rgba(54, 115, 158, 0.7);
+      width: 100%;
+      z-index: 10;
+  }
+  
+  
+  .item{
+      font-family: 'Noto Sans Symbols 2', sans-serif;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 10px;
+      align-self: center;
+      color: white;
+  }
+  
+  .description {
+      display: flex;
+      flex-direction: column;   
+  }
+  
+  .section {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
+  .par{
+      display: flex;
+      flex-direction: column;
+      width: 30%;  
+      
+  }
+  .txt {
+    font-family: 'Noto Sans Symbols 2', sans-serif;
+    font-size: 15px;
+    color: #23376b;
+  }
+  
+  .pic {
+      align-self: center;
+      margin-bottom: 20px;
+  }
+  
+  
+  .toothWork {
+      display: flex;
+      width: 100%;
+  }
+  .work {
+      align-self: center;
+      margin: 10%;
+  }
+  .process {
+      width: 40%;
+      align-self: center;
+  }
+  
+  
+  .steps {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .stepText{
+      
+      padding: 3%;
+      background-color: rgb(79, 151, 190);
+      color: white;
+      font-size: 20px;
+      margin: 0;   
+  }
+  
+  
+  
+  .stepHeading {
+      font-family: 'Alata', sans-serif;
+      background-color: #e7a81e;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 15px;  
+      text-transform: uppercase;
+      margin: 0;
+  }
+  
+  .lastStep {
+    display: none;
+  }
+  
+  
+  .consy {
+      background-color: rgb(231, 168, 30, 0.6);
+  }
+  .consy:hover {
+      background-color: rgb(231, 168, 30);
+      transition-duration: 1s;
+  }
+  .btn {
+      font-family: 'Alata', sans-serif;
+      font-weight: lighter;
+      background-color: rgb(231, 168, 30, 0.8);
+      font-size: 20px;
+      border: none;
+      padding: 7px;
+      color: white;
+  }
+  .btn:hover {
+      background-color: #e7a81e;
+      transition-duration: 1s;
+  }
+  .vivera {
+      font-family: 'Alata', sans-serif;
+      font-weight: lighter;
+      background-color: rgb(231, 168, 30, 0.8);
+      font-size: 15px;
+      border: none;
+      padding: 7px;
+      color: white;
+  }
+  .vivera:hover {
+  
+      background-color: #e7a81e;
+      transition-duration: 1s;
+  }
+  .prices {
+      display: flex;
+      justify-content: center;
+      
+  }
+  
+  .aligner {
+    width: 40%;  
+  }
+  
+  span{
+      font-family: 'Roboto', sans-serif;   
+  }
+  
+  
+  
+  /* flip card */
+  .flip-card {
+      background-color: #e7a81e;
+      width: 30%;
+      height: 300px;
+      border: 1px solid #f1f1f1;
+      perspective: 1000px;  
+      margin: 10px;
+    }
+    
+    /* Этот контейнер нужен для позиционирования переда и обратной стороны фото */
+    .flip-card-inner {
+      /* position: relative; */
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    
+    /* Поворот горизонтальный */
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    /* Позиционирования переда и обратной стороны фото на телефоне */
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+    
+    /* Стиль переда и обратной стороны фото */
+    .flip-card-back {
+      background-color: rgba(54, 115, 158);
+      color: white;
+      transform: rotateY(180deg);
+    }
+    .flipHead {
+      color: white;
+      font-family: 'Alata', sans-serif;
+      margin-top: 30%;
+      font-size: 30px;
+      
+    }
+  
+    .flipHeadBack {
+      color: white;
+      font-family: 'Alata', sans-serif;
+      margin-top: 15%;
+      font-size: 25x;
+    }
+    
+    .flips{
+      display: flex;
+      justify-content: center;
+      
+    }
+  
+  
+    .priceRange {
+      display: flex;
+      justify-content: space-evenly;
+      box-shadow: 0px 0px 20px 0px rgb(0, 0, 0, 0.1);
+      margin: 50px;
+    }
+    .choice {
+      margin: 10px;
+      padding: 30px;
+    }
+  .par2 {
+      color: white;
+      padding: 10px;
+      font-size: 20px;
+  }
+    
+    .one {
+      border-right: rgb(79, 151, 190) solid 1px;
+    }
+    .three {
+      border-left: rgb(79, 151, 190) solid 1px;
+    }
+    .descr {
+      color: rgb(79, 151, 190);
+      font-size: 20px;
+    }
+    .jaws{
+      font-size: 15px;
+    }
+   
+    .freeBtn {
+      display: flex;
+      justify-content: center; 
+    }
+    
+    .free {
+      background-color: rgb(231, 168, 30, 0.8);
+      padding: 15px;
+      font-size: 20px;
+      color: white;
+      font-family: 'Alata', sans-serif;
+      border: none;
+      width: 100%;
+      align-self: center;
+     
+    }
+    .free:hover {
+      background-color: #e7a81e;
+      transition-duration: 1s;
+    }
+    .message{
+      display: flex;
+      justify-content: center;
+    }
+    .order {
+      font-family: 'Noto Sans Symbols 2', sans-serif;
+      align-content: center;
+      font-size: 15px;
+    }
+  
+    .contacts {
+      background-color: rgb(79, 151, 190);
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .contact {
+      color: white;
+      align-self: center;
+      font-weight: lighter;
+    }
+    .svg, .soc{
+      filter: invert();
+    }
+    .social{
+      display: flex;
+      justify-content: center;
+    }
+  
+    .soc {
+      margin: 25px;
+    }
+    .phone {
+      display: flex;
+      justify-content: center;
+    }
+    .number {
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      color: white;
+      
+      
+      
+    }
+  
+    /* 2page */
+  
+    .nav2, .nav3 {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(54, 115, 158, 0.7);
+      width: 100%;
+      position: fixed;
+      
+      
+        
+  }
+  
+  .start {
+      display: flex;
+      justify-content: center;    
+  }
+  
+  .startH2{
+    font-size: 20px;
+  }
+  form{
+      display: flex;
+      flex-direction: column;
+      
+  }
+  .inputForm{
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      margin: 3%;
+      width: 60%;  
+  }
+  label{
+      
+      font-family: 'Noto Sans Symbols 2', sans-serif;
+      color: #23376b;
+      font-weight: bold;
+  }
+  .input{ 
+      border: none;
+      border-bottom: #23376b 2px solid;
+      font-family: 'Noto Sans Symbols 2', sans-serif;
+  }
+  .checkbox{
+      display: flex;
+      justify-content: center;
+      font-family: 'Noto Sans Symbols 2', sans-serif;
+      color: #23376b;
+  }
+  
+  .register {
+      display: flex;
+      justify-content: center;
+      
+  }
+  .date {
+      font-weight: bold;
+      color: #e7a81e;
+      text-align: center;
+      font-size: 15px;
+  }
+  .regButton{
+      display: flex;
+      justify-content: center;
+  }
+  .regBtn {
+      
+      font-family: 'Alata', sans-serif;
+      font-weight: lighter;
+      background-color: rgb(231, 168, 30, 0.8);
+      font-size: 15px;
+      border: none;
+      padding: 10px;
+      color: white;
+  }
+  .regBtn:hover {
+          background-color: #e7a81e;
+          transition-duration: 1s;
+      }
+  
+  html {
+      scroll-behavior: smooth;
+  }    
+  
+  /* 3 page */
+  
+  
+  .howWorks, .rubber, .chewies, .eating, .cleaning, .crystal, .retainer, .hurting {
+      display: flex;
+      margin: 1%;
+      
+  }
+  
+  
+  .chew, .food, .rub, .girl, .clean, .crystals, .vivera, .hurt {
+      width: 40%;
+      
+      
+      
+  }
+  .descr2 {
+     
+      color: #23376b;
+      
+  }
+  .heading {
+      text-align: center;
+  }
+  
+  .centered {
+    
+    align-self: center;
+    
+  }
+  
+  
+  
+  /* MEDIA */
+  
+  @media all and (max-width: 800px) {
+    .flower{
+      width: 30px;
+     
+    }
+      .item{
+          font-size: 10px;
+        padding: 5px;
+   }
+  
+  .toothWork {
+    flex-direction: column-reverse;
+    
+  }
+  .process {
+    width: 100%;
+  }
+  h2{
+    font-size: 20px;
+    margin: 5%;
+  }
+  
+  p{
+    
+    font-size: 15px;
+    margin: 5%;
+    
+  }
+  
+  
+  .txt, .stepHeading  {
+    font-size: 10px;
+    
+  }
+  
+  
+  .stepText{
+    font-size: 15px; 
+  }
+  
+  
+  .lastStep{
+    display: block;
+    width: 100%;
+  }
+  
+  
+  .flip-card {
+    background-color: #e7a81e;
+    width: 35%;
+    height: 200px;
+    margin: 5px;
+  }
+  .flipHead {
+    color: white;
+    font-family: 'Alata', sans-serif;
+    margin-top: 50%;
+    font-size: 15px;
+  }
+  
+  .flipHeadBack {
+    color: white;
+    font-family: 'Alata', sans-serif;
+    margin-top: 15%;
+    font-size: 10px;
+  }
+  
+  
+  .par2{
+    font-size: 9px;
+    padding: 2px;
+    width: 80%;
+    
+  }
+  
+  
+  
+  .priceRange{
+    flex-direction: column;
+   
+  }
+  .starting {
+    margin: 15px;
+  }
+  .one {
+    border-right: none;
+    
+    border-bottom: #e7a81e solid 1px;
+    
+  }
+  .three {
+    border-left: none;
+    border-top: #e7a81e solid 1px;
+    
+  
+  }
+  
+  
+  
+  
+  .work {
+    align-self: center;
+    margin: 0px;
+  }
+  .btn { 
+    font-size: 15px;
+    padding: 5px;
+    margin-left: 15px;
+  }
+  
+  
+  
+  .flip-card:active .flip-card-inner {
+    align-self: center;
+    transform: rotateY(180deg);
+  }
+  
+  
+  .free {
+    
+    padding: 10px;
+    font-size: 15px; 
+  }
+  .order{
+    font-size: 10px;
+  }
+  
+  
+  .startH2{
+    font-size: 15px;
+  }
+  
+  
+  
+  
+  .howWorks, .rubber, .chewies, .eating, .cleaning, .crystal, .retainer, .hurting {
+    flex-direction: column;
+  }
+  
+  .chew, .food, .rub, .girl, .clean, .crystals, .vivera, .hurt {
+    width: 100%;
+    
+  }
+  .descr2{
+    
+    font-size: 15px;
+    
+  }
+  
+  
+  }
